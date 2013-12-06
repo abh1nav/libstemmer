@@ -997,7 +997,6 @@ private static final long serialVersionUID = 1L;
                             // <-, line 155
                             slice_from("ant");
                             return false;
-                            break;
                         case 14:
                             // (, line 156
                             // call RV, line 156
@@ -1010,7 +1009,6 @@ private static final long serialVersionUID = 1L;
                             // <-, line 156
                             slice_from("ent");
                             return false;
-                            break;
                         case 15:
                             // (, line 158
                             // test, line 158
@@ -1031,7 +1029,6 @@ private static final long serialVersionUID = 1L;
                             // delete, line 158
                             slice_del();
                             return false;
-                            break;
                     }
                     return true;
                 }
