@@ -5,8 +5,8 @@ Mavenized version of the Snowball libstemmer distribution.
 
 Source taken from: http://snowball.tartarus.org/
 
-Usage
------
+Install
+-------
 
 Install the library into your local Maven cache:
 
@@ -16,8 +16,11 @@ cd libstemmer
 mvn clean install
 ```
 
+Depend
+------
+  
 And add it to your dependencies list in `pom.xml`:
-
+  
 ```
 <!-- libstemmer -->
 <dependency>
@@ -26,7 +29,28 @@ And add it to your dependencies list in `pom.xml`:
     <version>1.0.0</version>
 </dependency>
 ```
-
+  
+Use
+---
+  
+```java
+SnowballStemmer stemmer = new englishStemmer();
+String sentence = "I'm liking libstemmer";
+for(String word : sentence.split(" ")) {
+    stemmer.setCurrent(word);
+    stemmer.stem();
+    System.out.println(stemmer.getCurrent());
+}
+```
+  
+Output:
+  
+```
+I'm
+like
+libstemm
+```
+  
 License
 -------
 
