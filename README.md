@@ -29,7 +29,7 @@ And add it to your dependencies list in `pom.xml`:
     <version>1.0.0</version>
 </dependency>
 ```
-To include it  without building it before you can add the repository  http://repo.element.hr/nexus/content/repositories/releases/org/tartarus/snowball/libstemmer/1.0.0/
+To include it  without building it before you can add the repository  http://raisercostin.googlecode.com/svn/maven2/org/tartarus/snowball/libstemmer/1.0.0/
 ```
   <repositories>
 		<repository>
