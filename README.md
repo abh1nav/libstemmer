@@ -29,17 +29,18 @@ And add it to your dependencies list in `pom.xml`:
     <version>1.0.0</version>
 </dependency>
 ```
-To include it  without building it before you can add the repository  http://raisercostin.googlecode.com/svn/maven2/org/tartarus/snowball/libstemmer/1.0.0/
+
+[raisercostin](https://github.com/raisercostin) has contributed a hosted version of this that you can use by including the following in your POM:
 ```
-  <repositories>
-		<repository>
-			<id>org.raisercostin.public.releases</id>
-			<url>http://raisercostin.googlecode.com/svn/maven2</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
+<repositories>
+  <repository>
+    <id>org.raisercostin.public.releases</id>
+    <url>http://raisercostin.googlecode.com/svn/maven2</url>
+    <snapshots>
+      <enabled>false</enabled>
+    </snapshots>
+  </repository>
+</repositories>
 ```
 
 Use
